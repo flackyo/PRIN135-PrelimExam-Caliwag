@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIN135-PrelimExam</title>
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
+<body id="top">
+
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#achievements">Awards & Achievements</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="site-header">
+        <div class="header-inner clearfix">
+
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <img class="photo" src="https://i.pinimg.com/736x/b5/46/ce/b546ce5a216eaecbfc4ccfe563750c36.jpg" alt="Profile picture of Daniel Josef Caliwag">
+                </div>
+            </div>
+
+            <div class="header-text">
+                <h1 class="name">Daniel Josef M. Caliwag</h1>
+                <ul class="header-links">
+                    <li><a href="tel:+639947672853">+63 994 767 2853</a></li>
+                    <li><a href="mailto:caliwag24336032mls.ceu.edu.ph">caliwag24336032mls.ceu.edu.ph</a></li>
+                    <li><a href="https://github.com/flackyo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+                <p class="profile">
+                    A BSIT College Student from Centro Escolar University determined on learning new tools and techniques.
+                </p>
+            </div>
+
+        </div>
     </header>
 
-    <main>
+    <main class="wrapper">
 
-        <section id="about">
-            <header>
-                <h2>Profile</h2>
-            </header>
-
-            <img src="https://i.pinimg.com/736x/b5/46/ce/b546ce5a216eaecbfc4ccfe563750c36.jpg" 
-                 alt="Profile Picture of Daniel Josef Caliwag" 
-                 width="150" 
-                 height="150">
-
-            <header>
-                <h1>Daniel Josef M. Caliwag</h1>
-            </header>
-            
-            <p>
-                <strong>Email:</strong> 
-                <a href="mailto:caliwag24336032mls.ceu.edu.ph">caliwag24336032mls.ceu.edu.ph</a>
-            </p>
-            
-            <p>
-                <strong>Contact Number:</strong> 
-                <a href="tel:+639947672853">+63 9947672853</a>
-            </p>
-
-            <p>
-                <strong>GitHub Activity:</strong> 
-                <a href="https://github.com/flackyo" target="_blank" rel="noopener noreferrer">
-                    View GitHub Profile
-                </a>
-            </p>
-            
-            <p>A BSIT College Student from Centro Escolar University</p>
-        </section>
-
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skill-list">
                 <li>Python</li>
                 <li>JavaScript</li>
                 <li>C++</li>
@@ -66,57 +62,67 @@
             </ul>
         </section>
 
-        <section id="education">
+        <section id="education" class="card">
             <h2>Education</h2>
-            <ol>
-                <li>BS Information Technology – Centro Escolar University (2024–Present)</li>
-                <li>Grade 11-12 TVL Animation - Marcelo H. Del Pilar National High School</li>
-                <li>Elementary - La Consolacion University Philippines</li>
-            </ol>
+
+            <div class="entry">
+                <span class="entry-year">2024 - Present</span>
+                <h3>BS Information Technology</h3>
+                <p class="entry-school">Centro Escolar University</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">Grade 11-12</span>
+                <h3>TVL Animation</h3>
+                <p class="entry-school">Marcelo H. Del Pilar National High School</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">Elementary</span>
+                <h3>Elementary Education</h3>
+                <p class="entry-school">La Consolacion University Philippines</p>
+            </div>
         </section>
 
-        <section id="achievements">
+        <section id="achievements" class="card">
             <h2>Awards & Achievements</h2>
-            <ol>
-                <li>Tesda CSS NC II</li>
-                <li>FreeCodeCamp Certificate</li>
-                <li>Cisco Networking Academy Certificate</li>
-                <li>Intermediate SQL Certificate</li>
-            </ol>
+            <ul class="achievement-list">
+                <li><strong>Tesda CSS NC II</strong></li>
+                <li><strong>FreeCodeCamp Certificate</strong></li>
+                <li><strong>Cisco Networking Academy Certificate</strong></li>
+                <li><strong>Intermediate SQL Certificate</strong></li>
+            </ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="card">
             <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" maxlength="25" placeholder="Your name" required>
+                    </div>
 
-            <form action="#" method="POST">
-
-                <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" maxlength="25" required placeholder="Enter your name">
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" maxlength="25" placeholder="you@example.com" required>
+                    </div>
                 </div>
 
-                <br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="255" rows="5" placeholder="Write your message..." required></textarea>
 
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" maxlength="25" required placeholder="Enter your email">
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" maxlength="255" rows="5" cols="30" required placeholder="Enter your message here..."></textarea>
-                </div>
-
-                <br>
-
-                <button type="submit">Submit</button>
-
+                <button type="submit">Send Message</button>
             </form>
         </section>
 
     </main>
 
+    <footer class="site-footer">
+        <p class="footer-name">Daniel Josef Caliwag &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
 </body>
+
 </html>
